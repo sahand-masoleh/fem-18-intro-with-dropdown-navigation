@@ -25,19 +25,7 @@ body {
 
 .main {
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row-reverse;
-	justify-content: center;
-	align-content: flex-start;
-
-	max-width: 150ch;
-	/* padding: 0 10ch; */
-}
-
-.content,
-.hero {
-	flex-basis: 25ch;
-	flex-grow: 1;
+	flex-direction: column;
 }
 
 /* || FOOTER */
@@ -48,4 +36,21 @@ body {
 }
 .footer a {
 	color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 500px) {
+	.main {
+		display: grid;
+		grid-template-columns: 60% 40%;
+		padding: 1em 10%;
+		height: min-content;
+		max-width: 90em;
+	}
+	.content {
+		flex-basis: 60%;
+	}
+
+	.hero {
+		flex-basis: 40%;
+	}
 }

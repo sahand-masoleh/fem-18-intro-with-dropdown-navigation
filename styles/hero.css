@@ -1,8 +1,11 @@
-.hero {
-	width: 100%;
-}
-
 .hero__image {
 	max-width: 100%;
 	object-fit: cover;
+}
+
+@media screen and (min-width: 500px) {
+	.hero__image {
+		height: 100%;
+		object-fit: cover;
+	}
 }

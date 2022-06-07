@@ -12,12 +12,10 @@
 <body>
   <nav class="nav">
     <img src="./images/logo.svg" alt="" srcset="" class="nav__logo">
-    <!-- <label for="menu__button" class="nav__hamburger-container" for="test">
-      <input type="checkbox" class="nav__checkbox" id="test">
-      <span class="nav__hamburger"></span>
-    </label> -->
+
     <input type="checkbox" class="nav__checkbox" id="nav__checkbox">
     <label for="nav__checkbox" class="nav__hamburger"></label>
+
     <div class="nav__menu-container">
       <details class="nav__item">
         <summary class="nav__summary">
@@ -48,12 +46,16 @@
       <a href="javascript:void(0)" class="nav__item nav__item--break nav__button">Login</a>
       <a href="javascript:void(0)" class="nav__item nav__button nav__button--outline">Register</a>
     </div>
+
   </nav>
 
   <main class="main">
+
     <div class="hero">
-      <img src="./images/image-hero-mobile.png" alt="man working on a laptop" class="hero__image">
+      <img src="./images/image-hero-mobile.png" srcset="./images/image-hero-mobile.png 500w,
+              ./images/image-hero-desktop.png 750w" alt="man working on a laptop" class="hero__image">
     </div>
+
     <div class="content">
       <h1 class="content__title">Make remote work</h1>
       <p class="content__text">Get your team in sync, no matter your location. Streamline processes,
@@ -66,6 +68,7 @@
         <img src="./images/client-maker.svg" alt="" class="content__logo">
       </dev>
     </div>
+
   </main>
 
   <footer class="footer">
@@ -73,7 +76,7 @@
     Coded by <a href="#" target="_blank">Sahand Masoleh</a>.
   </footer>
 
-
+  <script src="app.js"></script>
 </body>
 
 </html>
