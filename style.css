@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+@import url("./styles/nav.css");
+@import url("./styles/hero.css");
+@import url("./styles/content.css");
 
 * {
 	margin: 0;
@@ -16,7 +19,25 @@
 body {
 	min-height: 100vh;
 	display: grid;
+	justify-content: center;
 	grid-template-rows: auto 1fr auto;
+}
+
+.main {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-content: flex-start;
+
+	max-width: 150ch;
+	/* padding: 0 10ch; */
+}
+
+.content,
+.hero {
+	flex-basis: 25ch;
+	flex-grow: 1;
 }
 
 /* || FOOTER */

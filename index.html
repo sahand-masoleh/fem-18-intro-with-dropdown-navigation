@@ -11,40 +11,60 @@
 
 <body>
   <nav class="nav">
-    <img src="./images/logo.svg" alt="" srcset="" class="logo">
-    <div class="nav__container">
-      <a href="javascript:void(0)" class="nav__link">Features
+    <img src="./images/logo.svg" alt="" srcset="" class="nav__logo">
+    <!-- <label for="menu__button" class="nav__hamburger-container" for="test">
+      <input type="checkbox" class="nav__checkbox" id="test">
+      <span class="nav__hamburger"></span>
+    </label> -->
+    <input type="checkbox" class="nav__checkbox" id="nav__checkbox">
+    <label for="nav__checkbox" class="nav__hamburger"></label>
+    <div class="nav__menu-container">
+      <details class="nav__item">
+        <summary class="nav__summary">
+          Features
+          <img src="images/icon-arrow-down.svg" alt="" class="nav__arrow">
+        </summary>
         <ul class="nav__menu">
-          <li class="nav__item"><img src="./images/icon-todo.svg" alt="" class="nav__icon">Todo List</li>
-          <li class="nav__item"><img src="./images/icon-calendar.svg" alt="" class="nav__icon">Calendar</li>
-          <li class="nav__item"><img src="./images/icon-reminders.svg" alt="" class="nav__icon">Reminders</li>
-          <li class="nav__item"><img src="./images/icon-planning.svg" alt="" class="nav__icon">Planning</li>
+          <li class="nav__menu-item"><img src="./images/icon-todo.svg" alt="" class="nav__icon">Todo List</li>
+          <li class="nav__menu-item"><img src="./images/icon-calendar.svg" alt="" class="nav__icon">Calendar</li>
+          <li class="nav__menu-item"><img src="./images/icon-reminders.svg" alt="" class="nav__icon">Reminders</li>
+          <li class="nav__menu-item"><img src="./images/icon-planning.svg" alt="" class="nav__icon">Planning</li>
         </ul>
-      </a>
-      <a href="javascript:void(0)" class="nav__link">Company
+      </details>
+      <details class="nav__item">
+        <summary class="nav__summary">
+          Company
+          <img src="images/icon-arrow-down.svg" alt="" class="nav__arrow">
+        </summary>
         <ul class="nav__menu">
-          <li class="nav__item">History</li>
-          <li class="nav__item">Our Team</li>
-          <li class="nav__item">Blog</li>
+          <li class="nav__menu-item">History</li>
+          <li class="nav__menu-item">Our Team</li>
+          <li class="nav__menu-item">Blog</li>
         </ul>
-      </a>
-      <a href="javascript:void(0)" class="nav__link">Careers</a>
-      <a href="javascript:void(0)" class="nav__link">About</a>
+      </details>
+      <a href="javascript:void(0)" class="nav__item">Careers</a>
+      <a href="javascript:void(0)" class="nav__item">About</a>
 
-      <a href="javascript:void(0)" class="nav__link">Login</a>
-      <a href="javascript:void(0)" class="nav__link">Register</a>
+      <a href="javascript:void(0)" class="nav__item nav__item--break nav__button">Login</a>
+      <a href="javascript:void(0)" class="nav__item nav__button nav__button--outline">Register</a>
     </div>
   </nav>
 
-  <main>
+  <main class="main">
     <div class="hero">
-      <img src="./images/image-hero-mobile.png" alt="man working on a laptop">
+      <img src="./images/image-hero-mobile.png" alt="man working on a laptop" class="hero__image">
     </div>
     <div class="content">
       <h1 class="content__title">Make remote work</h1>
       <p class="content__text">Get your team in sync, no matter your location. Streamline processes,
         create team rituals, and watch productivity soar.</p>
-      <button class="content__learn-more">Learn more</button>
+      <button class="content__btn">Learn more</button>
+      <dev class="content__logo-container">
+        <img src="./images/client-databiz.svg" alt="databiz" class="content__logo">
+        <img src="./images/client-audiophile.svg" alt="" class="content__logo">
+        <img src="./images/client-meet.svg" alt="" class="content__logo">
+        <img src="./images/client-maker.svg" alt="" class="content__logo">
+      </dev>
     </div>
   </main>
 
@@ -52,6 +72,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#" target="_blank">Sahand Masoleh</a>.
   </footer>
+
+
 </body>
 
 </html>

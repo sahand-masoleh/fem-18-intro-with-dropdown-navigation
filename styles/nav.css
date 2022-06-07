@@ -1,0 +1,92 @@
+.nav {
+	padding: 2ch;
+	/* padding-bottom: 1ch; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav__logo {
+	margin-top: 1ch;
+}
+
+.nav__checkbox {
+	display: none;
+}
+
+.nav__hamburger {
+	width: 3ch;
+	height: 3ch;
+	display: block;
+	background-image: url("../images/icon-menu.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	user-select: none;
+	z-index: 1;
+}
+
+.nav__checkbox:checked ~ .nav__hamburger {
+	background-image: url("../images/icon-close-menu.svg");
+}
+
+.nav__checkbox:not(:checked) ~ .nav__menu-container {
+	display: none;
+}
+
+.nav__menu-container {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 25ch;
+	height: 100vh;
+	background-color: var(--almost-white);
+	padding: 8ch 2ch;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 2.5ch;
+}
+
+.nav__item {
+	color: var(--medium-gray);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.nav__summary,
+.nav__menu-item {
+	list-style: none;
+}
+
+[open] .nav__summary > .nav__arrow {
+	transform: rotate(180deg);
+}
+
+.nav__arrow {
+	margin-left: 1ch;
+}
+
+.nav__item--break {
+	margin-top: 2ch;
+}
+
+.nav__button {
+	align-self: center;
+	font-size: 0.9em;
+}
+
+.nav__button--outline {
+	width: 100%;
+	padding: 1.5ch;
+	border-radius: 1.5ch;
+	text-align: center;
+	outline: 2px solid var(--medium-gray);
+}
+
+.nav__menu-item {
+	display: flex;
+	gap: 1ch;
+	margin: 3ch;
+}
