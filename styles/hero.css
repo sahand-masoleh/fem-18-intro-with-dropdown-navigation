@@ -4,6 +4,9 @@
 }
 
 @media screen and (min-width: 500px) {
+	.hero {
+		grid-row: span 2;
+	}
 	.hero__image {
 		height: 100%;
 		object-fit: cover;

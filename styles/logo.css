@@ -1,0 +1,27 @@
+.logo-container {
+	padding: 2ch;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	max-height: 3ch;
+	max-width: 8ch;
+}
+
+@media screen and (min-width: 500px) {
+	.logo-container {
+		margin-top: auto;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		padding-right: 22%;
+		gap: 5%;
+	}
+
+	.logo {
+		max-height: 4ch;
+		max-width: 10ch;
+	}
+}

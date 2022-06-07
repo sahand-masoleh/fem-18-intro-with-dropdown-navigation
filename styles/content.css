@@ -26,7 +26,6 @@
 	color: var(--almost-white);
 	margin-bottom: 3ch;
 	font-size: 1em;
-	z-index: 1;
 	cursor: pointer;
 }
 
@@ -65,23 +64,13 @@
 		font-size: 1.2em;
 	}
 
+	.content__btn {
+		z-index: 1;
+	}
+
 	.content__btn:hover {
 		background-color: white;
 		outline: 1px solid var(--almost-black);
 		color: var(--almost-black);
-	}
-
-	.content__logo-container {
-		position: absolute;
-		bottom: 0;
-		flex-wrap: wrap;
-		margin-top: unset;
-		justify-content: flex-start;
-		gap: 5%;
-	}
-
-	.content__logo {
-		max-height: 4ch;
-		max-width: 10ch;
 	}
 }

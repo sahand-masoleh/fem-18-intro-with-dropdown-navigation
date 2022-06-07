@@ -2,6 +2,7 @@
 @import url("./styles/nav.css");
 @import url("./styles/hero.css");
 @import url("./styles/content.css");
+@import url("./styles/logo.css");
 
 * {
 	margin: 0;
@@ -42,15 +43,9 @@ body {
 	.main {
 		display: grid;
 		grid-template-columns: 60% 40%;
+		grid-template-rows: 1fr auto;
 		padding: 1em 10%;
 		height: min-content;
 		max-width: 90em;
-	}
-	.content {
-		flex-basis: 60%;
-	}
-
-	.hero {
-		flex-basis: 40%;
 	}
 }
