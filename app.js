@@ -1,9 +1,9 @@
 const dropDowns = document.querySelectorAll(".nav__summary");
 document.addEventListener("click", closeDropdowns);
 
-function closeDropdowns(event) {
+function closeDropdowns() {
 	for (let dropDown of dropDowns) {
 		navItem = dropDown.parentElement;
-		navItem.open = false;
+		if (navItem.open) navItem.open = false;
 	}
 }
